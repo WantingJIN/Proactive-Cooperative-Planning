@@ -1,0 +1,16 @@
+s3: initial guess [0,0]
+f1: accumalated distance of robot states towards the goal
+
+
+without consider human comfort, directional cost and time to collison cost, the robot have an agressive behavior, but the human model is not appropriate to model the human motion under this scenario, since humans should also have the politeness to wait to let the robot first pass
+
+
+Let's see whether by adding the directional the robot will behave politely, or under the cost function f1, the robot can only behave rudely.
+
+
+
+s4: initial guess [0,0] By adding the ttc cost and the directional cost, the robot is able to wait....Try with the circle obstacle with the initial guess as [0 0] as also the f1 as accumulated distance
+
+
+
+s5: The robot can behave properly but some planning the robot still go to the corner of between the obstacel and the wall, better to use a half circle
